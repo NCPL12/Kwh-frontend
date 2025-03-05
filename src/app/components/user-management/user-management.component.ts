@@ -96,46 +96,55 @@ export class UserManagementComponent {
   
   onSaveUser(): void {
     this.showErrors = true;
-  
+    this.usernameError = "";
+
+    // Validate required fields
     if (!this.currentUser.username || !this.currentUser.role || !this.currentUser.fullName || !this.currentUser.phoneNumber) {
-      return;
+        return;
     }
-  
+
+    // Validate phone number (only 10 digits)
+    if (!/^\d{10}$/.test(this.currentUser.phoneNumber)) {
+        return;
+    }
+
     this.showErrors = false;
-  
+
     // Fetch all users and check if the username already exists
     this.http.get<any[]>(`${this.apiBaseUrl}/get-users`).subscribe(
-      (users) => {
-        const usernameExists = users.some(user => user.username.toLowerCase() === this.currentUser.username.toLowerCase() && user.id !== this.currentUser.id);
-  
-        if (usernameExists) {
-          this.showErrors = true;
-          this.usernameError = "Username already exists. Please choose a different username.";
-          return;
-        }
-  
-        // Proceed with save operation if username is unique
-        if (this.isEdit) {
-          this.http.put(`${this.apiBaseUrl}/update-user/${this.currentUser.id}`, this.currentUser).subscribe(
-            () => {
-              this.loadUsers();
-              this.showForm = false;
-            },
-            (error) => console.error('Error updating user:', error)
-          );
-        } else {
-          this.http.post(`${this.apiBaseUrl}/add-user`, this.currentUser).subscribe(
-            () => {
-              this.loadUsers();
-              this.showForm = false;
-            },
-            (error) => console.error('Error adding user:', error)
-          );
-        }
-      },
-      (error) => console.error('Error fetching users:', error)
+        (users) => {
+            const usernameExists = users.some(user => 
+                user.username.toLowerCase() === this.currentUser.username.toLowerCase() && user.id !== this.currentUser.id
+            );
+
+            if (usernameExists) {
+                this.showErrors = true;
+                this.usernameError = "Username already exists. Please choose a different username.";
+                return;
+            }
+
+            // Determine API call based on whether it's an edit or a new user
+            const apiUrl = this.isEdit
+                ? `${this.apiBaseUrl}/update-user/${this.currentUser.id}`
+                : `${this.apiBaseUrl}/add-user`;
+
+            const httpMethod = this.isEdit
+                ? this.http.put(apiUrl, this.currentUser)
+                : this.http.post(apiUrl, this.currentUser);
+
+            // Save user
+            httpMethod.subscribe(
+                () => {
+                    this.loadUsers();
+                    this.showForm = false;
+                },
+                (error) => console.error(`Error ${this.isEdit ? 'updating' : 'adding'} user:`, error)
+            );
+        },
+        (error) => console.error("Error fetching users:", error)
     );
-  }
+}
+
   
   
   onDeleteUser(userId: number): void {

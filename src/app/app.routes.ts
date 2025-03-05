@@ -27,14 +27,17 @@ export const routes: Routes = [
       { path: 'energy-meter-management', component: EnergyMeterManagementComponent },
       { path: 'billing', component: BillingComponent },
       { path: 'manual-billing', component: ManualBillingComponent },
-      { path: 'history', component:BillingHistoryComponent  },
-      { path: 'user-management', component: UserManagementComponent },
+      { path: 'history', component: BillingHistoryComponent },
       { path: 'building-details', component: BuildingDetailsComponent },
       { path: 'automated-bill', component: AutomatedBillComponent },
-      { path: '', redirectTo: '/home', pathMatch: 'full' }, 
+      { path: '', redirectTo: '/home', pathMatch: 'full' },
     ],
   },
-  { path: '**', component: NotFoundComponent }, 
+  // Apply authGuard separately to enforce role-based restrictions
+  { 
+    path: 'user-management', 
+    component: UserManagementComponent, 
+    canActivate: [authGuard] 
+  },
+  { path: '**', component: NotFoundComponent },
 ];
-
-

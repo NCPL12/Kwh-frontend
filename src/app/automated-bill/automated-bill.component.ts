@@ -45,19 +45,22 @@ export class AutomatedBillComponent {
   fetchBillingHistory(): void {
     this.http.get<any[]>(`${environment.apiBaseUrl}/scheduled-bills/all-auto`).subscribe({
       next: (data) => {
-        if (this.role === "admin") {
-          this.billingHistory = data;
-        } else {
-          this.billingHistory = data.filter(record => record.generated_by  === this.userName);
-        }
+        // Store the full fetched data in a component variable
+        this.billingHistory = data;
+        
+        // Update the UI or perform additional logic
         this.updateDisplayedTenants();
         this.filterRecords();
         this.sortBillingHistory();
       },
-      error: () => this.errorMessage = "Failed to load billing history. Please try again later."
+      error: (error) => {
+        // Handle the error appropriately
+        this.errorMessage = "Failed to load billing history. Please try again later.";
+        console.error("Error fetching billing history:", error);
+      }
     });
   }
-
+  
   loadTenants(): void {
     this.http.get<any[]>(`${environment.apiBaseUrl}/get-all-tenants`).subscribe({
       next: (data) => {

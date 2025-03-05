@@ -46,11 +46,7 @@ export class BillingHistoryComponent implements OnInit {
   fetchBillingHistory(): void {
     this.http.get<any[]>(`${environment.apiBaseUrl}/all-bill-histories`).subscribe({
       next: (data) => {
-        if (this.role === "admin") {
-          this.billingHistory = data;
-        } else {
-          this.billingHistory = data.filter(record => record.generated_by  === this.userName);
-        }
+        this.billingHistory = data;
         this.updateDisplayedTenants();
         this.filterRecords();
         this.sortBillingHistory();
@@ -58,7 +54,7 @@ export class BillingHistoryComponent implements OnInit {
       error: () => this.errorMessage = "Failed to load billing history. Please try again later."
     });
   }
-
+  
   loadTenants(): void {
     this.http.get<any[]>(`${environment.apiBaseUrl}/get-all-tenants`).subscribe({
       next: (data) => {

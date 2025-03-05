@@ -75,8 +75,8 @@
                             <label for="role" class="form-label">Role</label>
                             <select id="role" class="form-control" [(ngModel)]="currentUser.role" name="role" required
                                 [ngClass]="{ 'is-invalid': showErrors && !currentUser.role }">
-                                <option value="admin">Admin</option>
-                                <!-- <option value="operator">Operator</option> -->
+                                <!-- <option value="admin">Admin</option> -->
+                                <option value="operator">Operator</option>
                             </select>
                             <div *ngIf="showErrors && !currentUser.role" class="invalid-feedback">
                                 Role is required.
@@ -93,7 +93,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="phoneNumber" class="form-label">Phone Number</label>
-                            <input type="text" id="phoneNumber" class="form-control"
+                            <input type="number" id="phoneNumber" class="form-control"
                                 [(ngModel)]="currentUser.phoneNumber" name="phoneNumber" required pattern="^[0-9]{10}$"
                                 [ngClass]="{ 'is-invalid': showErrors && !currentUser.phoneNumber }" />
                             <div *ngIf="showErrors && !currentUser.phoneNumber" class="invalid-feedback">
