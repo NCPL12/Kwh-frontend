@@ -1,0 +1,75 @@
+<img src="../../../assets/images/logo1.png" style="height: 45px; position: absolute; left: 86%;top: 2%;" alt="">
+
+<div class="container mt-3">
+    <!-- Title -->
+    <div class="mb-4 text-start p-2">
+        <h2 class="text-navy">Floor to Energy Meter Management</h2>
+        <hr>
+    </div>
+    <div class="mb-3 text-end">
+        <button class="btn btn-navy" (click)="onAddFloorEnergyMapping()">Add Energy  meter</button>
+    </div>
+
+    <div class="table-responsive" style="max-height: 300px; overflow-y: auto;">
+        <table class="table table-bordered table-hover">
+            <thead class="table-navy text-white">
+                <tr>
+                    <th scope="col" class="text-dark">ID</th>
+                    <th scope="col" class="text-dark">Floor Name</th>
+                    <th scope="col" class="text-dark">Energy Meter</th>
+                    <th scope="col" class="text-dark">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let mapping of floorEnergyMeters">
+                    <td>{{ mapping.id }}</td>
+                    <td>{{ mapping.floorName }}</td>
+                    <td>{{ mapping.energyMeterName }}</td>
+                    <td>
+                        <button class="btn btn-outline-navy btn-sm me-2" (click)="onEditFloorEnergyMapping(mapping.id)">
+                            <i class="bi bi-pencil-square"></i>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="modal fade show" [ngClass]="{ 'd-block': showForm }" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="text-navy">{{ isEdit ? 'Edit' : 'Add' }} Mapping</h4>
+                    <button type="button" class="btn-close" (click)="onCancel()"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="floorId" class="form-label">Select Floor</label>
+                            <select id="floorId" class="form-control" [(ngModel)]="currentFloorMeter.floorId" name="floorId">
+                                <option *ngFor="let floor of availableFloors" [value]="floor.id">
+                                    {{ floor.id }} - {{ floor.floorName }}
+                                </option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="energyMeterId" class="form-label">Select Energy Meter</label>
+                            <select id="energyMeterId" class="form-control" [(ngModel)]="currentFloorMeter.energyMeterId" name="energyMeterId">
+                                <option *ngFor="let meter of availableEnergyMeters" [value]="meter.id">
+                                    {{ meter.id }} - {{ meter.name }}
+                                </option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-navy" (click)="onCancel()">Cancel</button>
+                    <button type="button" class="btn btn-navy" (click)="onSaveFloorEnergyMapping()">
+                        {{ isEdit ? 'Update' : 'Add' }}
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
