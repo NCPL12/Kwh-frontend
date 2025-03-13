@@ -1,0 +1,339 @@
+2025-03-13T09:48:09.248+05:30  INFO 17404 --- [restartedMain] ncpl.bms.reports.BmsReportsApplication   : Starting BmsReportsApplication using Java 17.0.12 with PID 17404 (C:\Users\tekni\Desktop\KWH REPORT GENERATION\bms1-main-c\bms-reports\target\classes started by NCPL-AST-11 in C:\Users\tekni\Desktop\KWH REPORT GENERATION\bms1-main-c)
+2025-03-13T09:48:09.269+05:30 DEBUG 17404 --- [restartedMain] ncpl.bms.reports.BmsReportsApplication   : Running with Spring Boot v3.1.7, Spring v6.0.15
+2025-03-13T09:48:09.271+05:30  INFO 17404 --- [restartedMain] ncpl.bms.reports.BmsReportsApplication   : The following 1 profile is active: "dev"
+2025-03-13T09:48:09.565+05:30  INFO 17404 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-13T09:48:09.567+05:30  INFO 17404 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-13T09:48:12.325+05:30  INFO 17404 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-13T09:48:12.404+05:30  INFO 17404 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 0 JPA repository interfaces.
+2025-03-13T09:48:14.776+05:30  INFO 17404 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-03-13T09:48:14.801+05:30  INFO 17404 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-13T09:48:14.802+05:30  INFO 17404 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2025-03-13T09:48:14.973+05:30  INFO 17404 --- [restartedMain] o.a.c.c.C.[.[localhost].[/bms-reports]   : Initializing Spring embedded WebApplicationContext
+2025-03-13T09:48:14.973+05:30  INFO 17404 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5402 ms
+2025-03-13T09:48:15.467+05:30  INFO 17404 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-13T09:48:15.656+05:30  INFO 17404 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-03-13T09:48:15.756+05:30  INFO 17404 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-13T09:48:16.342+05:30  INFO 17404 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-13T09:48:16.411+05:30  INFO 17404 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-13T09:48:16.948+05:30  INFO 17404 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: 45316c90-7632-442e-90f8-e806dc0df045
+2025-03-13T09:48:16.951+05:30  INFO 17404 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-13T09:48:17.832+05:30  INFO 17404 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-13T09:48:17.853+05:30  INFO 17404 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T09:48:18.452+05:30  WARN 17404 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-13T09:48:21.003+05:30  INFO 17404 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-13T09:48:21.076+05:30  INFO 17404 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/bms-reports'
+2025-03-13T09:48:21.105+05:30  INFO 17404 --- [restartedMain] ncpl.bms.reports.BmsReportsApplication   : Started BmsReportsApplication in 13.003 seconds (process running for 14.432)
+2025-03-13T09:49:07.615+05:30  INFO 17404 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/bms-reports]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-13T09:49:07.615+05:30  INFO 17404 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-13T09:49:07.619+05:30  INFO 17404 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2025-03-13T09:52:20.728+05:30  INFO 17404 --- [http-nio-8080-exec-10] n.b.r.c.MonthlyReportController          : Generating monthly bill PDF for 02/2025
+2025-03-13T10:01:02.272+05:30  INFO 17404 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T10:01:02.280+05:30  INFO 17404 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-13T10:01:02.284+05:30  INFO 17404 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-13T10:03:41.988+05:30  INFO 1116 --- [restartedMain] ncpl.bms.reports.BmsReportsApplication   : Starting BmsReportsApplication using Java 17.0.12 with PID 1116 (C:\Users\tekni\Desktop\KWH REPORT GENERATION\bms1-main-c\bms-reports\target\classes started by NCPL-AST-11 in C:\Users\tekni\Desktop\KWH REPORT GENERATION\bms1-main-c)
+2025-03-13T10:03:41.991+05:30 DEBUG 1116 --- [restartedMain] ncpl.bms.reports.BmsReportsApplication   : Running with Spring Boot v3.1.7, Spring v6.0.15
+2025-03-13T10:03:41.993+05:30  INFO 1116 --- [restartedMain] ncpl.bms.reports.BmsReportsApplication   : The following 1 profile is active: "dev"
+2025-03-13T10:03:42.194+05:30  INFO 1116 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-13T10:03:42.195+05:30  INFO 1116 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-13T10:03:44.453+05:30  INFO 1116 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-13T10:03:44.513+05:30  INFO 1116 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 0 JPA repository interfaces.
+2025-03-13T10:03:47.232+05:30  INFO 1116 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-03-13T10:03:47.262+05:30  INFO 1116 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-13T10:03:47.263+05:30  INFO 1116 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2025-03-13T10:03:47.508+05:30  INFO 1116 --- [restartedMain] o.a.c.c.C.[.[localhost].[/bms-reports]   : Initializing Spring embedded WebApplicationContext
+2025-03-13T10:03:47.509+05:30  INFO 1116 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5313 ms
+2025-03-13T10:03:47.941+05:30  INFO 1116 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-13T10:03:48.094+05:30  INFO 1116 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-03-13T10:03:48.200+05:30  INFO 1116 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-13T10:03:48.832+05:30  INFO 1116 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-13T10:03:48.911+05:30  INFO 1116 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-13T10:03:49.773+05:30  INFO 1116 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: 92dc9eea-0c8c-4ffc-83c5-0ec93dae6ae3
+2025-03-13T10:03:49.776+05:30  INFO 1116 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-13T10:03:50.773+05:30  INFO 1116 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-13T10:03:50.789+05:30  INFO 1116 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T10:03:51.398+05:30  WARN 1116 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-13T10:03:53.623+05:30  INFO 1116 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-13T10:03:53.690+05:30  INFO 1116 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/bms-reports'
+2025-03-13T10:03:53.716+05:30  INFO 1116 --- [restartedMain] ncpl.bms.reports.BmsReportsApplication   : Started BmsReportsApplication in 12.658 seconds (process running for 13.951)
+2025-03-13T10:04:38.631+05:30  INFO 1116 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/bms-reports]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-13T10:04:38.633+05:30  INFO 1116 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-13T10:04:38.633+05:30  INFO 1116 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-03-13T10:08:27.866+05:30  WARN 1116 --- [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO floor_to_energy_meter_relation (floor_id, energy_meter_id) VALUES (?, ?) RETURNING id]; SQL state [S0001]; error code [102]; Incorrect syntax near 'RETURNING'.]
+2025-03-13T10:41:26.072+05:30  INFO 1116 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T10:41:26.081+05:30  INFO 1116 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-13T10:41:26.088+05:30  INFO 1116 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-13T10:41:36.066+05:30  INFO 6752 --- [restartedMain] ncpl.bms.reports.BmsReportsApplication   : Starting BmsReportsApplication using Java 17.0.12 with PID 6752 (C:\Users\tekni\Desktop\KWH REPORT GENERATION\bms1-main-c\bms-reports\target\classes started by NCPL-AST-11 in C:\Users\tekni\Desktop\KWH REPORT GENERATION\bms1-main-c)
+2025-03-13T10:41:36.070+05:30 DEBUG 6752 --- [restartedMain] ncpl.bms.reports.BmsReportsApplication   : Running with Spring Boot v3.1.7, Spring v6.0.15
+2025-03-13T10:41:36.072+05:30  INFO 6752 --- [restartedMain] ncpl.bms.reports.BmsReportsApplication   : The following 1 profile is active: "dev"
+2025-03-13T10:41:36.255+05:30  INFO 6752 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-13T10:41:36.255+05:30  INFO 6752 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-13T10:41:38.492+05:30  INFO 6752 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-13T10:41:38.570+05:30  INFO 6752 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 0 JPA repository interfaces.
+2025-03-13T10:41:41.546+05:30  INFO 6752 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-03-13T10:41:41.564+05:30  INFO 6752 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-13T10:41:41.565+05:30  INFO 6752 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2025-03-13T10:41:41.738+05:30  INFO 6752 --- [restartedMain] o.a.c.c.C.[.[localhost].[/bms-reports]   : Initializing Spring embedded WebApplicationContext
+2025-03-13T10:41:41.739+05:30  INFO 6752 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5483 ms
+2025-03-13T10:41:42.124+05:30  INFO 6752 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-13T10:41:42.271+05:30  INFO 6752 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-03-13T10:41:42.376+05:30  INFO 6752 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-13T10:41:42.958+05:30  INFO 6752 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-13T10:41:43.069+05:30  INFO 6752 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-13T10:41:43.760+05:30  INFO 6752 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: 065619ba-4400-461a-99ee-58fa15081725
+2025-03-13T10:41:43.765+05:30  INFO 6752 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-13T10:41:44.693+05:30  INFO 6752 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-13T10:41:44.712+05:30  INFO 6752 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T10:41:45.345+05:30  WARN 6752 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-13T10:41:47.767+05:30  INFO 6752 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-13T10:41:47.824+05:30  INFO 6752 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/bms-reports'
+2025-03-13T10:41:47.858+05:30  INFO 6752 --- [restartedMain] ncpl.bms.reports.BmsReportsApplication   : Started BmsReportsApplication in 12.739 seconds (process running for 14.066)
+2025-03-13T10:42:11.409+05:30  INFO 6752 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/bms-reports]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-13T10:42:11.409+05:30  INFO 6752 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-13T10:42:11.418+05:30  INFO 6752 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2025-03-13T10:42:11.458+05:30  WARN 6752 --- [http-nio-8080-exec-1] o.s.web.servlet.PageNotFound             : No mapping for OPTIONS /bms-reports/v1/add-floor-to-energy-meter
+2025-03-13T10:42:11.685+05:30  WARN 6752 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint OPTIONS /bms-reports/v1/add-floor-to-energy-meter.]
+2025-03-13T10:45:27.360+05:30  WARN 6752 --- [http-nio-8080-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /bms-reports/v1/get-all-floor-to-energy-meters
+2025-03-13T10:45:27.378+05:30  WARN 6752 --- [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /bms-reports/v1/get-all-floor-to-energy-meters.]
+2025-03-13T10:45:37.028+05:30  WARN 6752 --- [http-nio-8080-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /bms-reports/v1/get-all-floor-to-energy-meters
+2025-03-13T10:45:37.038+05:30  WARN 6752 --- [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /bms-reports/v1/get-all-floor-to-energy-meters.]
+2025-03-13T10:45:53.438+05:30  WARN 6752 --- [http-nio-8080-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /bms-reports/v1/get-all-floor-to-energy-meters
+2025-03-13T10:45:53.451+05:30  WARN 6752 --- [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /bms-reports/v1/get-all-floor-to-energy-meters.]
+2025-03-13T10:45:54.220+05:30  WARN 6752 --- [http-nio-8080-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /bms-reports/v1/get-all-floor-to-energy-meters
+2025-03-13T10:45:54.228+05:30  WARN 6752 --- [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /bms-reports/v1/get-all-floor-to-energy-meters.]
+2025-03-13T10:47:50.089+05:30  WARN 6752 --- [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO floor_to_energy_meter_relation (floor_id, name) VALUES (?, ?) RETURNING id]; SQL state [S0001]; error code [102]; Incorrect syntax near 'RETURNING'.]
+2025-03-13T10:48:26.784+05:30  WARN 6752 --- [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO floor_to_energy_meter_relation (floor_id, name) VALUES (?, ?) RETURNING id]; SQL state [S0001]; error code [102]; Incorrect syntax near 'RETURNING'.]
+2025-03-13T10:49:43.233+05:30  WARN 6752 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO floor_to_energy_meter_relation (floor_id, name) VALUES (?, ?) RETURNING id]; SQL state [S0001]; error code [102]; Incorrect syntax near 'RETURNING'.]
+2025-03-13T10:50:23.034+05:30  WARN 6752 --- [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO floor_to_energy_meter_relation (floor_id, name) VALUES (?, ?) RETURNING id]; SQL state [S0001]; error code [102]; Incorrect syntax near 'RETURNING'.]
+2025-03-13T10:59:43.998+05:30  INFO 6752 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T10:59:44.008+05:30  INFO 6752 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-13T10:59:44.017+05:30  INFO 6752 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-13T11:01:11.705+05:30  INFO 18448 --- [restartedMain] ncpl.bms.reports.BmsReportsApplication   : Starting BmsReportsApplication using Java 17.0.12 with PID 18448 (C:\Users\tekni\Desktop\KWH REPORT GENERATION\bms1-main-c\bms-reports\target\classes started by NCPL-AST-11 in C:\Users\tekni\Desktop\KWH REPORT GENERATION\bms1-main-c)
+2025-03-13T11:01:11.711+05:30 DEBUG 18448 --- [restartedMain] ncpl.bms.reports.BmsReportsApplication   : Running with Spring Boot v3.1.7, Spring v6.0.15
+2025-03-13T11:01:11.713+05:30  INFO 18448 --- [restartedMain] ncpl.bms.reports.BmsReportsApplication   : The following 1 profile is active: "dev"
+2025-03-13T11:01:11.892+05:30  INFO 18448 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-13T11:01:11.893+05:30  INFO 18448 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-13T11:01:14.062+05:30  INFO 18448 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-13T11:01:14.151+05:30  INFO 18448 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 0 JPA repository interfaces.
+2025-03-13T11:01:16.584+05:30  INFO 18448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-03-13T11:01:16.618+05:30  INFO 18448 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-13T11:01:16.619+05:30  INFO 18448 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2025-03-13T11:01:16.850+05:30  INFO 18448 --- [restartedMain] o.a.c.c.C.[.[localhost].[/bms-reports]   : Initializing Spring embedded WebApplicationContext
+2025-03-13T11:01:16.851+05:30  INFO 18448 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4957 ms
+2025-03-13T11:01:17.247+05:30  INFO 18448 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-13T11:01:17.383+05:30  INFO 18448 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-03-13T11:01:17.460+05:30  INFO 18448 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-13T11:01:18.184+05:30  INFO 18448 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-13T11:01:18.258+05:30  INFO 18448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-13T11:01:19.060+05:30  INFO 18448 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: 4d2627c4-1be7-4be5-ab3f-6e8cdebdab5c
+2025-03-13T11:01:19.064+05:30  INFO 18448 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-13T11:01:20.160+05:30  INFO 18448 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-13T11:01:20.175+05:30  INFO 18448 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T11:01:20.917+05:30  WARN 18448 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-13T11:01:23.640+05:30  INFO 18448 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-13T11:01:23.734+05:30  INFO 18448 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/bms-reports'
+2025-03-13T11:01:23.777+05:30  INFO 18448 --- [restartedMain] ncpl.bms.reports.BmsReportsApplication   : Started BmsReportsApplication in 13.03 seconds (process running for 14.351)
+2025-03-13T11:01:31.526+05:30  INFO 18448 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/bms-reports]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-13T11:01:31.526+05:30  INFO 18448 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-13T11:01:31.530+05:30  INFO 18448 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2025-03-13T11:01:32.086+05:30  WARN 18448 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.DataIntegrityViolationException: PreparedStatementCallback; SQL [INSERT INTO floor_to_energy_meter_relation (floor_id, name) OUTPUT INSERTED.id VALUES (?, ?)]; Cannot insert the value NULL into column 'name', table 'kwh_data_ai_generated.dbo.floor_to_energy_meter_relation'; column does not allow nulls. INSERT fails.]
+2025-03-13T11:12:18.754+05:30  INFO 18448 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T11:12:18.762+05:30  INFO 18448 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-13T11:12:18.769+05:30  INFO 18448 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-13T11:12:22.710+05:30  INFO 13388 --- [restartedMain] ncpl.bms.reports.BmsReportsApplication   : Starting BmsReportsApplication using Java 17.0.12 with PID 13388 (C:\Users\tekni\Desktop\KWH REPORT GENERATION\bms1-main-c\bms-reports\target\classes started by NCPL-AST-11 in C:\Users\tekni\Desktop\KWH REPORT GENERATION\bms1-main-c)
+2025-03-13T11:12:22.715+05:30 DEBUG 13388 --- [restartedMain] ncpl.bms.reports.BmsReportsApplication   : Running with Spring Boot v3.1.7, Spring v6.0.15
+2025-03-13T11:12:22.717+05:30  INFO 13388 --- [restartedMain] ncpl.bms.reports.BmsReportsApplication   : The following 1 profile is active: "dev"
+2025-03-13T11:12:22.889+05:30  INFO 13388 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-13T11:12:22.889+05:30  INFO 13388 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-13T11:12:25.117+05:30  INFO 13388 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-13T11:12:25.174+05:30  INFO 13388 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 0 JPA repository interfaces.
+2025-03-13T11:12:27.763+05:30  INFO 13388 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-03-13T11:12:27.806+05:30  INFO 13388 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-13T11:12:27.806+05:30  INFO 13388 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2025-03-13T11:12:28.025+05:30  INFO 13388 --- [restartedMain] o.a.c.c.C.[.[localhost].[/bms-reports]   : Initializing Spring embedded WebApplicationContext
+2025-03-13T11:12:28.026+05:30  INFO 13388 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5135 ms
+2025-03-13T11:12:28.404+05:30  INFO 13388 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-13T11:12:28.563+05:30  INFO 13388 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-03-13T11:12:28.652+05:30  INFO 13388 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-13T11:12:29.279+05:30  INFO 13388 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-13T11:12:29.383+05:30  INFO 13388 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-13T11:12:30.148+05:30  INFO 13388 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: 32211135-d196-4561-ac07-0444ddb81585
+2025-03-13T11:12:30.153+05:30  INFO 13388 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-13T11:12:31.148+05:30  INFO 13388 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-13T11:12:31.158+05:30  INFO 13388 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T11:12:31.813+05:30  WARN 13388 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-13T11:12:34.243+05:30  INFO 13388 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-13T11:12:34.338+05:30  INFO 13388 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/bms-reports'
+2025-03-13T11:12:34.404+05:30  INFO 13388 --- [restartedMain] ncpl.bms.reports.BmsReportsApplication   : Started BmsReportsApplication in 12.65 seconds (process running for 13.955)
+2025-03-13T11:12:44.284+05:30  INFO 13388 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/bms-reports]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-13T11:12:44.286+05:30  INFO 13388 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-13T11:12:44.286+05:30  INFO 13388 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-03-13T11:12:45.122+05:30  WARN 13388 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.DataIntegrityViolationException: PreparedStatementCallback; SQL [INSERT INTO floor_to_energy_meter_relation (floor_id, name) OUTPUT INSERTED.id VALUES (?, ?)]; Cannot insert the value NULL into column 'name', table 'kwh_data_ai_generated.dbo.floor_to_energy_meter_relation'; column does not allow nulls. INSERT fails.]
+2025-03-13T11:13:09.856+05:30  INFO 13388 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T11:13:09.863+05:30  INFO 13388 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-13T11:13:09.869+05:30  INFO 13388 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-13T11:13:40.611+05:30  INFO 19256 --- [restartedMain] ncpl.bms.reports.BmsReportsApplication   : Starting BmsReportsApplication using Java 17.0.12 with PID 19256 (C:\Users\tekni\Desktop\KWH REPORT GENERATION\bms1-main-c\bms-reports\target\classes started by NCPL-AST-11 in C:\Users\tekni\Desktop\KWH REPORT GENERATION\bms1-main-c)
+2025-03-13T11:13:40.617+05:30 DEBUG 19256 --- [restartedMain] ncpl.bms.reports.BmsReportsApplication   : Running with Spring Boot v3.1.7, Spring v6.0.15
+2025-03-13T11:13:40.620+05:30  INFO 19256 --- [restartedMain] ncpl.bms.reports.BmsReportsApplication   : The following 1 profile is active: "dev"
+2025-03-13T11:13:40.808+05:30  INFO 19256 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-13T11:13:40.809+05:30  INFO 19256 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-13T11:13:42.953+05:30  INFO 19256 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-13T11:13:43.033+05:30  INFO 19256 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 0 JPA repository interfaces.
+2025-03-13T11:13:45.612+05:30  INFO 19256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-03-13T11:13:45.635+05:30  INFO 19256 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-13T11:13:45.636+05:30  INFO 19256 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2025-03-13T11:13:45.909+05:30  INFO 19256 --- [restartedMain] o.a.c.c.C.[.[localhost].[/bms-reports]   : Initializing Spring embedded WebApplicationContext
+2025-03-13T11:13:45.911+05:30  INFO 19256 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5100 ms
+2025-03-13T11:13:46.566+05:30  INFO 19256 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-13T11:13:46.744+05:30  INFO 19256 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-03-13T11:13:46.868+05:30  INFO 19256 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-13T11:13:47.614+05:30  INFO 19256 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-13T11:13:47.706+05:30  INFO 19256 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-13T11:13:48.305+05:30  INFO 19256 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: 6a6fd752-f6f5-433b-894a-6b65012fe931
+2025-03-13T11:13:48.308+05:30  INFO 19256 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-13T11:13:49.274+05:30  INFO 19256 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-13T11:13:49.290+05:30  INFO 19256 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T11:13:49.895+05:30  WARN 19256 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-13T11:13:52.644+05:30  INFO 19256 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-13T11:13:52.715+05:30  INFO 19256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/bms-reports'
+2025-03-13T11:13:52.738+05:30  INFO 19256 --- [restartedMain] ncpl.bms.reports.BmsReportsApplication   : Started BmsReportsApplication in 13.1 seconds (process running for 14.433)
+2025-03-13T11:14:21.852+05:30  INFO 19256 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/bms-reports]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-13T11:14:21.853+05:30  INFO 19256 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-13T11:14:21.854+05:30  INFO 19256 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-03-13T11:14:22.559+05:30  WARN 19256 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO floor_to_energy_meter_relation (floor_id, name) VALUES (?, ?) RETURNING id]; SQL state [S0001]; error code [102]; Incorrect syntax near 'RETURNING'.]
+2025-03-13T11:21:07.442+05:30  INFO 19256 --- [http-nio-8080-exec-4] n.b.r.c.MonthlyReportController          : Generating monthly bill PDF for 02/2025
+2025-03-13T11:22:09.882+05:30  INFO 19256 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T11:22:09.890+05:30  INFO 19256 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-13T11:22:09.895+05:30  INFO 19256 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-13T11:22:18.115+05:30  INFO 18272 --- [restartedMain] ncpl.bms.reports.BmsReportsApplication   : Starting BmsReportsApplication using Java 17.0.12 with PID 18272 (C:\Users\tekni\Desktop\KWH REPORT GENERATION\bms1-main-c\bms-reports\target\classes started by NCPL-AST-11 in C:\Users\tekni\Desktop\KWH REPORT GENERATION\bms1-main-c)
+2025-03-13T11:22:18.120+05:30 DEBUG 18272 --- [restartedMain] ncpl.bms.reports.BmsReportsApplication   : Running with Spring Boot v3.1.7, Spring v6.0.15
+2025-03-13T11:22:18.123+05:30  INFO 18272 --- [restartedMain] ncpl.bms.reports.BmsReportsApplication   : The following 1 profile is active: "dev"
+2025-03-13T11:22:18.314+05:30  INFO 18272 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-13T11:22:18.315+05:30  INFO 18272 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-13T11:22:20.621+05:30  INFO 18272 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-13T11:22:20.676+05:30  INFO 18272 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 0 JPA repository interfaces.
+2025-03-13T11:22:23.726+05:30  INFO 18272 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-03-13T11:22:23.759+05:30  INFO 18272 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-13T11:22:23.760+05:30  INFO 18272 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2025-03-13T11:22:24.069+05:30  INFO 18272 --- [restartedMain] o.a.c.c.C.[.[localhost].[/bms-reports]   : Initializing Spring embedded WebApplicationContext
+2025-03-13T11:22:24.070+05:30  INFO 18272 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5753 ms
+2025-03-13T11:22:24.522+05:30  INFO 18272 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-13T11:22:24.663+05:30  INFO 18272 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-03-13T11:22:24.747+05:30  INFO 18272 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-13T11:22:25.365+05:30  INFO 18272 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-13T11:22:25.448+05:30  INFO 18272 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-13T11:22:26.133+05:30  INFO 18272 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: de3a527a-3fa0-4e44-8b9b-81517c1a665b
+2025-03-13T11:22:26.137+05:30  INFO 18272 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-13T11:22:27.007+05:30  INFO 18272 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-13T11:22:27.026+05:30  INFO 18272 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T11:22:27.637+05:30  WARN 18272 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-13T11:22:30.172+05:30  INFO 18272 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-13T11:22:30.247+05:30  INFO 18272 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/bms-reports'
+2025-03-13T11:22:30.280+05:30  INFO 18272 --- [restartedMain] ncpl.bms.reports.BmsReportsApplication   : Started BmsReportsApplication in 13.089 seconds (process running for 14.293)
+2025-03-13T11:22:44.866+05:30  INFO 18272 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/bms-reports]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-13T11:22:44.867+05:30  INFO 18272 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-13T11:22:44.869+05:30  INFO 18272 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-03-13T11:22:45.040+05:30  INFO 18272 --- [http-nio-8080-exec-1] n.b.r.c.MonthlyReportController          : Generating monthly bill PDF for 02/2025
+2025-03-13T11:22:59.546+05:30  INFO 18272 --- [http-nio-8080-exec-2] n.b.r.c.MonthlyReportController          : Generating monthly bill PDF for 01/2024
+2025-03-13T11:23:50.204+05:30  WARN 18272 --- [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.RuntimeException: Tenant not found with ID: 7]
+2025-03-13T11:23:50.205+05:30  WARN 18272 --- [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.RuntimeException: Tenant not found with ID: 8]
+2025-03-13T11:23:50.211+05:30  WARN 18272 --- [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.RuntimeException: Tenant not found with ID: 6]
+2025-03-13T11:23:50.225+05:30  WARN 18272 --- [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.RuntimeException: Tenant not found with ID: 7]
+2025-03-13T11:24:40.987+05:30  INFO 18272 --- [http-nio-8080-exec-4] n.b.r.c.MonthlyReportController          : Generating monthly bill PDF for 02/2025
+2025-03-13T11:24:47.747+05:30  INFO 18272 --- [http-nio-8080-exec-5] n.b.r.c.MonthlyReportController          : Generating monthly bill PDF for 01/2024
+2025-03-13T11:44:58.992+05:30  INFO 18272 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T11:44:59.006+05:30  INFO 18272 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-13T11:44:59.018+05:30  INFO 18272 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-13T11:45:08.097+05:30  INFO 8056 --- [restartedMain] ncpl.bms.reports.BmsReportsApplication   : Starting BmsReportsApplication using Java 17.0.12 with PID 8056 (C:\Users\tekni\Desktop\KWH REPORT GENERATION\bms1-main-c\bms-reports\target\classes started by NCPL-AST-11 in C:\Users\tekni\Desktop\KWH REPORT GENERATION\bms1-main-c)
+2025-03-13T11:45:08.102+05:30 DEBUG 8056 --- [restartedMain] ncpl.bms.reports.BmsReportsApplication   : Running with Spring Boot v3.1.7, Spring v6.0.15
+2025-03-13T11:45:08.104+05:30  INFO 8056 --- [restartedMain] ncpl.bms.reports.BmsReportsApplication   : The following 1 profile is active: "dev"
+2025-03-13T11:45:08.292+05:30  INFO 8056 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-13T11:45:08.294+05:30  INFO 8056 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-13T11:45:10.570+05:30  INFO 8056 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-13T11:45:10.641+05:30  INFO 8056 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 0 JPA repository interfaces.
+2025-03-13T11:45:13.544+05:30  INFO 8056 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-03-13T11:45:13.591+05:30  INFO 8056 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-13T11:45:13.592+05:30  INFO 8056 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2025-03-13T11:45:13.862+05:30  INFO 8056 --- [restartedMain] o.a.c.c.C.[.[localhost].[/bms-reports]   : Initializing Spring embedded WebApplicationContext
+2025-03-13T11:45:13.862+05:30  INFO 8056 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5567 ms
+2025-03-13T11:45:14.383+05:30  INFO 8056 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-13T11:45:14.634+05:30  INFO 8056 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-03-13T11:45:14.778+05:30  INFO 8056 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-13T11:45:15.587+05:30  INFO 8056 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-13T11:45:15.684+05:30  INFO 8056 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-13T11:45:16.462+05:30  INFO 8056 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: 9ccd76f1-98c1-4ef3-ae22-bc29efdd52c5
+2025-03-13T11:45:16.467+05:30  INFO 8056 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-13T11:45:17.531+05:30  INFO 8056 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-13T11:45:17.542+05:30  INFO 8056 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T11:45:18.134+05:30  WARN 8056 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-13T11:45:20.799+05:30  INFO 8056 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-13T11:45:20.861+05:30  INFO 8056 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/bms-reports'
+2025-03-13T11:45:20.897+05:30  INFO 8056 --- [restartedMain] ncpl.bms.reports.BmsReportsApplication   : Started BmsReportsApplication in 13.816 seconds (process running for 15.126)
+2025-03-13T11:45:49.339+05:30  INFO 8056 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/bms-reports]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-13T11:45:49.339+05:30  INFO 8056 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-13T11:45:49.344+05:30  INFO 8056 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2025-03-13T11:45:49.564+05:30  INFO 8056 --- [http-nio-8080-exec-1] n.b.r.c.MonthlyReportController          : Generating monthly bill PDF for 02/2025
+2025-03-13T11:48:39.885+05:30  INFO 8056 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T11:48:39.895+05:30  INFO 8056 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-13T11:48:39.902+05:30  INFO 8056 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-13T11:48:48.056+05:30  INFO 1588 --- [restartedMain] ncpl.bms.reports.BmsReportsApplication   : Starting BmsReportsApplication using Java 17.0.12 with PID 1588 (C:\Users\tekni\Desktop\KWH REPORT GENERATION\bms1-main-c\bms-reports\target\classes started by NCPL-AST-11 in C:\Users\tekni\Desktop\KWH REPORT GENERATION\bms1-main-c)
+2025-03-13T11:48:48.059+05:30 DEBUG 1588 --- [restartedMain] ncpl.bms.reports.BmsReportsApplication   : Running with Spring Boot v3.1.7, Spring v6.0.15
+2025-03-13T11:48:48.062+05:30  INFO 1588 --- [restartedMain] ncpl.bms.reports.BmsReportsApplication   : The following 1 profile is active: "dev"
+2025-03-13T11:48:48.248+05:30  INFO 1588 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-13T11:48:48.249+05:30  INFO 1588 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-13T11:48:50.313+05:30  INFO 1588 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-13T11:48:50.380+05:30  INFO 1588 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 0 JPA repository interfaces.
+2025-03-13T11:48:53.030+05:30  INFO 1588 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-03-13T11:48:53.047+05:30  INFO 1588 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-13T11:48:53.048+05:30  INFO 1588 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2025-03-13T11:48:53.262+05:30  INFO 1588 --- [restartedMain] o.a.c.c.C.[.[localhost].[/bms-reports]   : Initializing Spring embedded WebApplicationContext
+2025-03-13T11:48:53.264+05:30  INFO 1588 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5014 ms
+2025-03-13T11:48:53.779+05:30  INFO 1588 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-13T11:48:53.914+05:30  INFO 1588 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-03-13T11:48:53.987+05:30  INFO 1588 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-13T11:48:54.882+05:30  INFO 1588 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-13T11:48:54.987+05:30  INFO 1588 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-13T11:48:55.662+05:30  INFO 1588 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: 2f5b2366-0235-422c-83c4-bafee1892e50
+2025-03-13T11:48:55.665+05:30  INFO 1588 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-13T11:48:56.685+05:30  INFO 1588 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-13T11:48:56.695+05:30  INFO 1588 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T11:48:57.341+05:30  WARN 1588 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-13T11:49:00.914+05:30  INFO 1588 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-13T11:49:00.992+05:30  INFO 1588 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/bms-reports'
+2025-03-13T11:49:01.034+05:30  INFO 1588 --- [restartedMain] ncpl.bms.reports.BmsReportsApplication   : Started BmsReportsApplication in 13.884 seconds (process running for 15.168)
+2025-03-13T11:49:01.154+05:30  INFO 1588 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/bms-reports]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-13T11:49:01.154+05:30  INFO 1588 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-13T11:49:01.156+05:30  INFO 1588 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-03-13T11:49:01.432+05:30  INFO 1588 --- [http-nio-8080-exec-1] n.b.r.c.MonthlyReportController          : Generating monthly bill PDF for 02/2025
+2025-03-13T11:49:07.842+05:30  INFO 1588 --- [http-nio-8080-exec-5] n.b.r.c.MonthlyReportController          : Generating monthly bill PDF for 02/2025
+2025-03-13T11:50:47.817+05:30  INFO 1588 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T11:50:47.825+05:30  INFO 1588 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-13T11:50:47.830+05:30  INFO 1588 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-13T11:50:56.238+05:30  INFO 6124 --- [restartedMain] ncpl.bms.reports.BmsReportsApplication   : Starting BmsReportsApplication using Java 17.0.12 with PID 6124 (C:\Users\tekni\Desktop\KWH REPORT GENERATION\bms1-main-c\bms-reports\target\classes started by NCPL-AST-11 in C:\Users\tekni\Desktop\KWH REPORT GENERATION\bms1-main-c)
+2025-03-13T11:50:56.244+05:30 DEBUG 6124 --- [restartedMain] ncpl.bms.reports.BmsReportsApplication   : Running with Spring Boot v3.1.7, Spring v6.0.15
+2025-03-13T11:50:56.246+05:30  INFO 6124 --- [restartedMain] ncpl.bms.reports.BmsReportsApplication   : The following 1 profile is active: "dev"
+2025-03-13T11:50:56.435+05:30  INFO 6124 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-13T11:50:56.435+05:30  INFO 6124 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-13T11:50:58.772+05:30  INFO 6124 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-13T11:50:58.829+05:30  INFO 6124 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 0 JPA repository interfaces.
+2025-03-13T11:51:01.132+05:30  INFO 6124 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-03-13T11:51:01.185+05:30  INFO 6124 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-13T11:51:01.185+05:30  INFO 6124 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2025-03-13T11:51:01.411+05:30  INFO 6124 --- [restartedMain] o.a.c.c.C.[.[localhost].[/bms-reports]   : Initializing Spring embedded WebApplicationContext
+2025-03-13T11:51:01.411+05:30  INFO 6124 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4974 ms
+2025-03-13T11:51:01.851+05:30  INFO 6124 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-13T11:51:02.039+05:30  INFO 6124 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-03-13T11:51:02.146+05:30  INFO 6124 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-13T11:51:02.847+05:30  INFO 6124 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-13T11:51:02.924+05:30  INFO 6124 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-13T11:51:03.646+05:30  INFO 6124 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: 168ffb10-3331-42ed-93db-7c6c38604053
+2025-03-13T11:51:03.647+05:30  INFO 6124 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-13T11:51:04.577+05:30  INFO 6124 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-13T11:51:04.593+05:30  INFO 6124 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-13T11:51:05.266+05:30  WARN 6124 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-13T11:51:07.672+05:30  INFO 6124 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-13T11:51:07.759+05:30  INFO 6124 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/bms-reports'
+2025-03-13T11:51:07.794+05:30  INFO 6124 --- [restartedMain] ncpl.bms.reports.BmsReportsApplication   : Started BmsReportsApplication in 12.518 seconds (process running for 13.815)
+2025-03-13T11:51:17.702+05:30  INFO 6124 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/bms-reports]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-13T11:51:17.704+05:30  INFO 6124 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-13T11:51:17.709+05:30  INFO 6124 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2025-03-13T11:51:17.917+05:30  INFO 6124 --- [http-nio-8080-exec-1] n.b.r.c.MonthlyReportController          : Generating monthly bill PDF for 02/2025
